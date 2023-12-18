@@ -5,7 +5,6 @@ The Notification Microservice is a Spring Boot-based application designed to han
 ## Table of Contents
 
 1. [Project Structure](#project-structure)
-2. [Build and Run](#build-and-run)
 
 ## Project Structure <a name="project-structure"></a>
 
@@ -23,16 +22,8 @@ notification-microservice/
 ├── pom.xml
 ```
 
-### Build and Run <a name="build-and-run"></a>
+To run the application, run the following docker command:
 
-To build amd run the application, run the following Maven command:
-
-```bash
-mvn clean install
-
-java -jar ./target/user-microservice-0.0.1-SNAPSHOT.jar
-```
-To run RabbitMQ container in prompt as an administrator
 
 ```bash
 docker run -d --hostname my-rabbit --name some-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3-management
