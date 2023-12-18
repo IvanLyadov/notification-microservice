@@ -1,0 +1,16 @@
+application:
+  name: notifications
+  version: 1.0
+  title: Notifications
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  application:
+    name: notification-microservice
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
